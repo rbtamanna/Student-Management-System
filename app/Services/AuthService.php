@@ -84,7 +84,7 @@ class AuthService
                 'password' =>  $password,
                 'to' => $data['email'],
                 'email' => 'rbtamannarbt@gmail.com',
-                'name' => 'rabeya',
+                'name' => 'Student Management System',
                 'subject' => "!!!New Password!!!",
             ];
             ResetPasswordJob::dispatch($data);
