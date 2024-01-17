@@ -20,6 +20,13 @@
     <!-- Right Section -->
     <div class="d-flex align-items-center">
         <!-- User Dropdown -->
+        @if(!session('user_data'))
+            <div class="d-inline-block ml-2">
+                <a class="d-flex align-items-center justify-content-between" href="{{url('login') }}">
+                    <span class="font-size-sm font-w500">Login</span>
+                </a>
+            </div>
+        @endif
         @if(session('user_data'))
         <div class="dropdown d-inline-block ml-2">
             <button type="button" class="btn btn-sm btn-dual d-flex align-items-center" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
